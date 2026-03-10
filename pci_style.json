@@ -63,7 +63,7 @@
       "text-font": [
         "Source Sans Pro Bold Italic"
       ],
-      "text-size": 13
+      "text-size": 5
     },
     "paint": {
       "text-color": "#323232",
@@ -73,6 +73,7 @@
     }
   ]
 }
+
 
 
 
