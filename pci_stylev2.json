@@ -40,7 +40,7 @@
       "type": "line",
       "source": "pci",
       "source-layer": "sections",
-      "minzoom": 12,
+      "minzoom": 15,
       "paint": {
         "line-color": "#000000",
         "line-width": 0.8
