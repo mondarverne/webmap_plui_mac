@@ -31,7 +31,7 @@
       "source-layer": "parcelles",
       "paint": {
         "line-color": "#000000",
-        "line-width": 0.3
+        "line-width": 0.2
       }
     },
 
@@ -40,6 +40,7 @@
       "type": "line",
       "source": "pci",
       "source-layer": "sections",
+      "minzoom": 12,
       "paint": {
         "line-color": "#000000",
         "line-width": 0.8
@@ -51,7 +52,7 @@
       "type": "symbol",
       "source": "pci",
       "source-layer": "parcelles",
-      "minzoom": 16,
+      "minzoom": 17,
       "layout": {
         "text-field": "{numero}",
         "text-size": 11,
