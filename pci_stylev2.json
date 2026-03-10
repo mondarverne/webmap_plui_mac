@@ -52,7 +52,7 @@
       "type": "symbol",
       "source": "pci",
       "source-layer": "parcelles",
-      "minzoom": 17,
+      "minzoom": 14,
       "layout": {
         "text-field": "{numero}",
         "text-size": 11,
