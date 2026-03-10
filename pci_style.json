@@ -65,7 +65,6 @@
       ],
       "text-size": 13
     },
-    "minzoom" : 15,
     "paint": {
       "text-color": "#323232",
       "text-halo-color": "#ffffff",
@@ -74,6 +73,7 @@
     }
   ]
 }
+
 
 
 
