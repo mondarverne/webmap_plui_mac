@@ -51,7 +51,8 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "bevel"
-      }
+      },
+      "minzoom" : 15
     },
     {
     "id": "section_label",
@@ -63,7 +64,7 @@
       "text-font": [
         "Source Sans Pro Bold Italic"
       ],
-      "text-size": 15
+      "text-size": 13
     },
     "paint": {
       "text-color": "#323232",
@@ -73,6 +74,7 @@
     }
   ]
 }
+
 
 
 
