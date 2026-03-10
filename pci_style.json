@@ -48,8 +48,6 @@
         "line-color": "#323232",
         "line-width": 0.8
       },
-      "minzoom": 14,
-      "maxzoom": 24,
       "layout": {
         "line-cap": "butt",
         "line-join": "bevel"
@@ -75,6 +73,7 @@
     }
   ]
 }
+
 
 
 
