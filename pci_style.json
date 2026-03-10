@@ -59,7 +59,7 @@
     "source": "pci",
     "source-layer": "sections",
     "layout": {
-      "text-field": "{section}",
+      "text-field": "{code}",
       "text-font": [
         "Source Sans Pro Bold Italic"
       ],
@@ -73,6 +73,7 @@
     }
   ]
 }
+
 
 
 
