@@ -51,10 +51,10 @@
       "type": "symbol",
       "source": "pci",
       "source-layer": "parcelles",
-      "minzoom": 17,
+      "minzoom": 16,
       "layout": {
         "text-field": "{numero}",
-        "text-size": 11,
+        "text-size": 10,
         "text-anchor": "center",
         "text-allow-overlap": false
       },
