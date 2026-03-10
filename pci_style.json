@@ -7,7 +7,7 @@
     "pci": {
       "type": "vector",
       "tiles": [
-        "https://openmaptiles.data.gouv.fr/data/cadastre/{z}/{x}/{y}.pbf"
+        "https://data.geopf.fr/tms/1.0.0/PCI/{z}/{x}/{y}.pbf"
         ],
       "scheme": "xyz"
     }
@@ -177,6 +177,7 @@
     }
   ]
 }
+
 
 
 
