@@ -39,7 +39,7 @@
       "id": "section",
       "type": "line",
       "source": "pci",
-      "maxzoom": 8,
+      "minzoom": 8,
       "source-layer": "sections",
       "paint": {
         "line-color": "#343434",
@@ -69,7 +69,7 @@
       "minzoom": 14,
       "layout": {
         "text-field": "{code}",
-        "text-size": 15,
+        "text-size": 14,
         "text-anchor": "center"
       },
       "paint": {
