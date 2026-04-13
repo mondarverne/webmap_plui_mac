@@ -19,7 +19,7 @@
       "source": "pci",
       "source-layer": "batiments",
       "paint": {
-        "fill-color": "#61696b",
+        "fill-color": "#768082",
         "fill-opacity": 1
       }
     },
@@ -30,8 +30,8 @@
       "source": "pci",
       "source-layer": "parcelles",
       "paint": {
-        "line-color": "#000000",
-        "line-width": 0.2
+        "line-color": "#4f4f4f",
+        "line-width": 0.1
       }
     },
 
@@ -41,8 +41,8 @@
       "source": "pci",
       "source-layer": "sections",
       "paint": {
-        "line-color": "#000000",
-        "line-width": 0.8
+        "line-color": "#343434",
+        "line-width": 0.5
       }
     },
 
@@ -51,17 +51,17 @@
       "type": "symbol",
       "source": "pci",
       "source-layer": "parcelles",
-      "minzoom": 16,
+      "minzoom": 18,
       "layout": {
         "text-field": "{numero}",
-        "text-size": 10,
+        "text-size": 8,
         "text-anchor": "center",
         "text-allow-overlap": false
       },
       "paint": {
         "text-color": "#000000",
         "text-halo-color": "#ffffff",
-        "text-halo-width": 1
+        "text-halo-width": 0.8
       }
     },
 
@@ -73,13 +73,12 @@
       "minzoom": 14,
       "layout": {
         "text-field": "{code}",
-        "text-size": 14,
+        "text-size": 13,
         "text-anchor": "center"
       },
       "paint": {
-        "text-color": "#000000",
-        "text-halo-color": "#ffffff",
-        "text-halo-width": 1.5
+        "text-color": "#000000"
+        
       }
     }
 
