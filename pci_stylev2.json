@@ -31,7 +31,7 @@
       "source-layer": "parcelles",
       "paint": {
         "line-color": "#4f4f4f",
-        "line-width": 0.1
+        "line-width": 0.2
       }
     },
 
@@ -39,11 +39,11 @@
       "id": "section",
       "type": "line",
       "source": "pci",
-      "minzoom": 11,
+      "minzoom": 12,
       "source-layer": "sections",
       "paint": {
         "line-color": "#343434",
-        "line-width": 0.5
+        "line-width": 0.4
       }
     },
 
@@ -70,7 +70,8 @@
       "layout": {
         "text-field": "{code}",
         "text-size": 14,
-        "text-anchor": "center"
+        "text-anchor": "center",
+        "text-style": "bold"
       },
       "paint": {
         "text-color": "#000000"
