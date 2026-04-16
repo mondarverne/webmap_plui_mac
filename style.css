@@ -1,0 +1,424 @@
+/* Bouton de présentation*/
+.bouton_debut {
+  background-color: #f39200 !important;
+  color: white !important;
+  border-radius: 8px !important;
+  padding: 8px 20px !important;
+  font-weight: bold;
+  font-family: Calibri;
+  font-size: 20;
+}
+
+
+/* Le body prend toute la page sans marges */
+body {
+  margin: 0;
+  padding: 0;
+  display: block;
+  height: 100%;
+  font-family: Calibri, sans-serif;
+}
+
+/* Conteneur global */
+.container {
+  display: flex;
+  height: calc(100vh - 90px); /* pleine hauteur de la fenêtre */
+  width: 100%;
+}
+
+/* Popup de la carte*/ 
+.ol-popup{
+  color: #383737;
+}
+
+.ol-popup.default .anchor {
+  color: #f39200;
+   border: 2px;
+}
+
+.ol-popup.default > div {
+  background-color: #fff;
+  border: 2px solid #f39200;
+  border-radius: 5px;
+}
+
+.ol-popup .closeBox {
+  background-color:#f39200;
+  color: #fff;
+}
+
+.ol-popup .closeBox::after {
+  font-size: 1.2em;
+  top: 45%;
+}
+
+
+/* Bouton légende 
+.ol-legend > canvas {
+  float: left;
+}
+.ol-legend > div.ol-legend {
+  position: relative;
+}
+
+*/
+
+
+/* Panneau latéral gauche */
+.sidebar {
+  width: 275px;
+  min-width: 210px;
+  background: #f4f4f4;
+  padding: 10px;
+  box-shadow: 2px 0 1px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow-y: auto;
+  /*z-index: -1;*/
+  position: relative;
+  z-index: 10;
+
+}
+
+/* Style des menus déroulants */
+.sidebar select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  width: 90%;
+}
+
+
+/* Texte du panneau latéral*/
+#info {
+padding: 0px;
+line-height: 1.4em;
+min-height: 40px;
+}
+
+#info_presentation{
+  padding-top: 10px;
+  line-height: 1.4em;
+}
+
+p {
+  margin-top: 0;     /* supprime la marge au-dessus */
+}
+
+.zonages-list {
+  list-style: none; /* supprime les puces */
+  padding-left: 10;
+}
+
+
+/* La carte */
+#map {
+  flex: 1;
+}
+
+/* Bouton de légende */
+.ol-legend img {
+  width: 10px !important;
+  height: auto !important;
+}
+.ol-control.ol-legend button:first-child::after {
+  height: .1em;
+}
+
+.ol-control.ol-legend button.ol-closebox::before {
+  color: #383737;
+}
+
+.custom-legend {
+  bottom: 40px !important;
+  left: 10px !important;
+  right: auto !important;
+  top: auto !important;
+}
+
+
+/* paramètres des boutons d'OL  */
+.ol-control button {
+  color: #383737;
+  font-weight: 700;
+  line-height: .4em;
+  background-color:   #f4f4f4;;
+}
+
+.ol-control {
+  background-color: none;
+  border-radius: 0px;
+}
+
+/* paramètres de l'échelle */
+.ol-scale-line {
+  font-weight: bold;
+  top: auto;
+  right: auto;
+  bottom: 10px;
+  left: 10px;
+  background-color: #f4f4f4d2;
+}
+
+.ol-scale-line-inner {
+  color: #383737;
+  border-color: #383737;
+}
+
+
+/* Blocs info (OAP, ER, etc.) */
+.info-block {
+  margin-top: 12px;
+}
+
+
+/* Bandeau */
+#bandeau {
+  display: flex;
+  align-items: center;
+  height: 90px;
+  background: #e5e5e5;
+  /*border: 2px solid;*/
+  box-shadow: 0 3px 2px rgba(0,0,0,0.2);
+  position: sticky;
+  z-index: 20;
+}
+
+
+/* Titre */
+#titre {
+  margin: auto;
+  margin-left: 1px;
+  text-align: left;
+  font-family: 'Asap';
+  font-size: clamp(21px, 2.5vw, 40px);
+  font-weight: bold;
+  color: #383737;
+  overflow: hidden;
+}
+
+/* Logo */
+#logo_plui img,
+#logo_mac img {
+  max-height: auto;
+  width: 95%;
+}
+
+
+#logo_plui {
+  width: 260px;
+  min-width: 110px;
+  /*background-color: #ce0000;*/
+  padding: 10px;
+  display: flex;
+  overflow-y: auto;
+}
+
+
+#logo_mac {
+  width: 110px;
+  min-width: 70px;
+  /*background-color: #ce0000;*/
+  padding: 10px;
+  display: flex;
+  overflow-y: auto;
+
+}
+
+
+/* Style du gestionnaire de couches*/
+.layer-switcher input[type="checkbox"] {
+  accent-color: rgba(129, 129, 129, 0.3); /* couleur principale */
+  cursor: pointer;
+}
+
+.layer-switcher input[type="radio"] {
+  accent-color: rgba(129,129,129,0.6);
+  cursor: pointer;
+}
+
+/* Style des titres de groupe*/
+.ol-layerswitcher .panel {
+  font-family: 'Asap';
+  font-size: 13;
+  font-weight: bold;
+  color: #383737;
+}
+
+/* Style des éléments */
+.ol-layerswitcher .panel ul {
+  font-family: 'Asap';
+  font-size: 11;
+  font-weight: normal;
+}
+
+
+
+/* Style de la barre de transparence */
+/* Style du curseur de transparence */
+.ol-layerswitcher .layerswitcher-opacity .layerswitcher-opacity-cursor{
+  background: rgba(116, 116, 116, 0.0);
+}
+
+.ol-layerswitcher .layerswitcher-opacity .layerswitcher-opacity-cursor::before{
+  background: rgba(56, 56, 56, 0.7);
+  width: 10px;
+  height: 10px;
+}
+
+/* Style de la barre */
+.ol-layerswitcher .layerswitcher-opacity {
+  border: 1px solid #a2a2a2;
+  margin: 5px 1em 10px 7px;
+  border-radius: 3px;
+  background: #69c;
+  background: linear-gradient(to right, rgba(0,60,136,0), rgba(35, 35, 35, 0.6));
+  -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  box-shadow: 1px 1px 1px rgba(116, 116, 117, 0.5);
+}
+
+/* Structure de la box */
+.ol-layerswitcher li .li-content label {
+  width: 70%;
+  box-sizing: border-box;
+  vertical-align: middle;
+  margin: .6em 0;
+}
+
+
+.ol-layerswitcher .panel li .layerswitcher-opacity {
+  width: 30%;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: middle;
+  margin: 0;
+  left: 10
+}
+
+.ol-layerswitcher li .li-content {
+  width: calc(100% - 3em);
+}
+
+
+/* Style des boutons */
+.ol-layerswitcher [type=checkbox]+label:before, 
+.ol-layerswitcher [type=radio]+label:before {
+  content: '';
+  border: 1px solid #d1d1d1b3;
+  background-color: transparent;
+}
+.ol-layerswitcher [type=checkbox]:checked+label:before, 
+.ol-layerswitcher [type=radio]:checked+label:before {
+  background: rgba(196, 196, 196, 0.7);
+  border-color: #383737;
+}
+
+  /* check dessiné */
+.ol-layerswitcher [type=checkbox]:checked + label:after {
+  position: absolute;
+  top: 50%;
+  left: 9px;
+  width: 5px;
+  height: 9px;
+  border: solid #383737;
+  border-width: 0 2px 2px 0;
+
+  transform: translate(-50%, -60%) rotate(45deg);
+  box-shadow: 1px 0px 1px 1px #fff0;
+}
+
+
+.ol-layerswitcher [type="radio"]:checked + label:after {
+  content: "";
+  position: absolute;
+  border: none;
+  width: 7px;
+  height: 7px;
+  background-color: rgb(68, 68, 68);
+}
+
+
+/* Paramètres du bouton du gestionnaire de couches*/
+/* ouverture / fermeture des groupes */
+.ol-layerswitcher > button::before, .ol-layerswitcher > button::after {
+  content: "";
+  position: absolute;
+  width: .75em;
+  height: .75em;
+  border-radius: 0.15em;
+  -webkit-transform: scaleY(.8) rotate(45deg);
+  transform: scaleY(.8) rotate(45deg);
+}
+
+
+.ol-layerswitcher .expend-layers::before, .ol-layerswitcher .collapse-layers::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -2px;
+  height: 4px;
+  width: 100%;
+  background: #383737;
+}
+
+.ol-layerswitcher .expend-layers::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -2px;
+  width: 4px;
+  height: 100%;
+  background: #383737;
+}
+
+
+/* Gérer la liste déroulante dans l'organisateur de couche*/
+.ol-control.ol-layerswitcher .ol-switcherbottomdiv {
+  border-top: 1px solid #383737;
+}
+
+.ol-control.ol-layerswitcher .ol-switcherbottomdiv::before {
+  border-top-color: #383737;
+}
+
+.ol-control.ol-layerswitcher .ol-switchertopdiv {
+  border-bottom: 1px solid #383737;
+}
+
+.ol-control.ol-layerswitcher .ol-switchertopdiv::before {
+  border-bottom-color: #383737;
+}
+
+
+.ol-layerswitcher.ol-forceopen.ol-collapsed .ol-switchertopdiv{
+  display: block;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+.ol-layerswitcher.ol-forceopen.ol-collapsed .ol-switcherbottomdiv {
+  display: block;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+.ol-control.ol-layerswitcher .panel-container {
+  background-color: #ffffffd4;
+  min-width: 15em;
+}
+
+/* Style de l'icon organisateur de couche*/
+.ol-control.ol-layerswitcher {
+  border: 2px solid #c3c3c3;
+  background: #f4f4f4;
+  box-shadow: 0px 0 5px rgba(0,0,0,0.2);
+  top: 1em;
+}
+
+.ol-layerswitcher button{
+  background: rgba(255, 255, 255, 0);
+}
