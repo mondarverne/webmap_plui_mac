@@ -2,11 +2,16 @@
 // Fenêtre de présentation //
 ////////////////////////////
 
-/*window.addEventListener('load', () => {
+window.addEventListener('load', () => {
   Swal.fire({
     title: 'Bienvenue sur la carte interactive',
     iconColor : '#f39200',
-    text: "Dans le cadre de l'enquête publique, cette carte interactive présente le projet de Plan Local d'Urbanisme intercommunal (arrêté le 28/08/2025). Cette version n'est pas définitive, un travail complémentaire sera engagé à la suite de l'enquête publique et des retours des personnes publiques associées (PPA).",
+    //text: "Cette carte interactive permet de visualiser dans un navigateur web le plan de zonage du Plan Local d’Urbanisme intercommunal (PLUi) de Mond’Arverne Communauté. <br>Elle permet de naviguer sur le territoire, de zoomer et de rechercher une parcelle pour connaître son zonage et les potentielles prescriptions qui s’appliquent.",
+    html: `<div style="text-align: justify;">
+    <p>Cette carte interactive permet de visualiser dans un navigateur web le plan de zonage du Plan Local d’Urbanisme intercommunal (PLUi) de Mond’Arverne Communauté.</p>
+    <p>Elle permet de naviguer sur le territoire, de zoomer et de rechercher une parcelle pour connaître son zonage et les potentielles prescriptions qui s’appliquent.</p>
+    <p>Consulter le <a href="https://raw.githubusercontent.com/mondarverne/webmap_plui_mac/main/mode_d_emploi_webmap.pdf" target="_blank">guide d'utilisation</a>.</p>
+    </div>`,
     icon: 'info',
     confirmButtonText: 'Commencer',
     
@@ -14,7 +19,7 @@
       confirmButton: 'bouton_debut',
     }
   });
-});*/
+});
 
 
 
@@ -179,8 +184,10 @@ map.on('singleclick', function (evt) {
 
   if (feature) {
     const nom = feature.get('LIBELONG');
-    popup.show(coord, `<strong>${nom}</strong>`);
-  } else {
+    const lien_reglm = feature.get('lien_reglmt');
+  popup.show(coord, `
+      <strong>${nom}</strong> <a href="${lien_reglm}" target="_blank"><strong>(règlement)</strong> </a>
+    `);  } else {
     popup.hide();
   }
 });

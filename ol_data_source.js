@@ -52,7 +52,7 @@ const img_aerienne_layer = new ol.layer.Tile({
 
 // Appel de la couche IGN BD TOPO (style gris)
 const ign_tuile_gris = new ol.layer.VectorTile({
-	title: 'BD TOPO (gris)',
+	title: 'BDTOPO (gris)',
 	//type: 'base',
 	visible: false,
 	baseLayer: true,
@@ -68,7 +68,7 @@ olms.applyStyle(ign_tuile_gris, 'https://data.geopf.fr/annexes/ressources/vector
 
 // Appel de la couche IGN BD TOPO (style couleur)
 const ign_tuile_coul = new ol.layer.VectorTile({
-	title: 'BD TOPO (couleur)',
+	title: 'BDTOPO',
 	//type: 'base',
 	baseLayer: true,
 	visible: false,
